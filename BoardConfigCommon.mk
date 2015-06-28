@@ -149,3 +149,16 @@ TARGET_SPECIFIC_HEADER_PATH := device/lge/g2-common/include
 
 #Fix reboot when the screen is locked
 BOARD_NO_WIFI_HAL := true
+
+#TWRP config:
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_SDCARD_ON_DATA := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.175/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_L_CRYPTO := true
+TARGET_RECOVERY_INITRC := device/lge/g2-common/twrp/init.rc
+TARGET_HW_DISK_ENCRYPTION := true
