@@ -103,6 +103,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.qualcomm.sns.daemon=i \
     debug.qualcomm.sns.libsensor1=e
 
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.supplicant_scan_interval=120 \
